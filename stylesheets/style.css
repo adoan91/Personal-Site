@@ -1,0 +1,271 @@
+/*** General ***/
+
+body {
+  /* need to add padding to top for fixed navbar*/
+  padding-top: 70px;
+  /* Main-body font */
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+}
+
+
+section {
+  /* necessary padding on top to get jump links to properly show everything, due to fixed navbar */
+  padding-top: 70px;
+  /* space out sections */
+  height: 550px;
+}
+
+#contact {
+  height: 400px;
+}
+
+#portfolio {
+  /* doesn't fit well with set height */
+  height: auto;
+  padding-bottom: 20px;
+}
+
+
+/* Parallax BG */
+
+
+.image {
+  height: 400px; /* 750px too large*/
+  width: 100%;
+  background: #2D4571;
+  z-index 1;
+}
+
+
+#wall1 {
+  background: url("http://www.transparenttextures.com/patterns/arabesque.png") repeat;
+  background-color: #638cb0;
+  background-attachment: fixed;
+}
+
+#wall2 {
+  background: url("http://www.transparenttextures.com/patterns/black-thread-light.png") repeat;
+  background-color: #610000;
+  background-attachment: fixed;
+}
+
+#wall3 {
+  background: url("http://www.transparenttextures.com/patterns/bo-play.png") repeat;
+  background-color: #110001;
+  background-attachment: fixed;
+}
+
+
+/* Title Fonts */
+
+h1 {
+  font-size: 3.5em;
+}
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+
+/* Button Styles */
+
+button {
+  /* decent spacing to prevent misclicks */
+  margin: 12px 10px;
+}
+
+button a {
+  font-size: 18px;
+  color: #295781;
+}
+
+.btn {
+  border: 2px solid black;
+  box-shadow: 4px 4px 2px #ccc;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: 0.15s all ease;
+}
+
+.btn-default:hover {
+  background-color: #777;
+  border: 2px solid black;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-default:hover a {
+  color: white;
+}
+
+
+/*** Home ***/
+.navbar-brand {
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+.navbar-brand:hover {
+  background-color: #444;
+}
+
+.nav li {
+  /* invisible border */
+  border-bottom: 2px solid #222;
+  /* transition animation on both border-bottom and bg color */
+  transition: all 0.5s ease;
+
+}
+.nav li:hover {
+  border-bottom: 2px solid white;
+  background-color: #444;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.topsocial {
+  list-style-type: none;
+}
+
+.topsocial li {
+  display: inline;
+}
+
+.topsocial a {
+  text-decoration: none;
+}
+
+
+/*** About ***/
+
+.profile {
+  /* add spacing above img */
+  margin-top: 24px;
+}
+
+/*** Portfolio ***/
+.thumbnail {
+  max-width: 340px;
+  margin: 10px auto;
+  transition: box-shadow 0.5s ease;
+}
+/* add shadow on hover */
+.thumbnail:hover {
+  box-shadow: 4px 6px 4px #444;
+}
+
+/* hover technique from http://codepen.io/ianfarb/pen/ikeAf */
+.pf-bg {
+  width:300px;
+  height:250px;
+  /* hide content if overflows container when container shrinks */
+  overflow: hidden;
+  background: url("http://placehold.it/300x250");
+}
+/*
+.pf-bg1 {
+  width:300px;
+  height:250px;
+  overflow: hidden;
+  background: url("");
+}
+*/
+.pf-hover-content {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.6);
+  padding:80px 0 66px 0;
+  color: white;
+  opacity:0;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+}
+
+.pf-bg:hover .pf-hover-content {
+  opacity: 1;
+}
+
+
+/*** Contact ***/
+
+.social {
+  list-style-type: none;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+
+/*** Footer ***/
+
+footer ul {
+  /* to align nav with copyright */
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  /* make the nav horizontal */
+  display: inline-block;
+  /* space out nav */
+  margin-right: 20px;
+}
+
+.copyright {
+  /* space out copyright from footer nav */
+  margin-top: 20px;
+}
+
+
+/*** Media Queries ***/
+
+@media (max-width: 768px) {
+  /* General */
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  section {
+    height: 525px;
+  }
+  .image {
+    height: 400px;
+  }
+  
+  button {
+  /* decent spacing to prevent misclicks */
+  margin: 10px 6px;
+}
+
+button a {
+  font-size: 16px;
+  color: #295781;
+}
+  
+  /* About */
+  .profile {
+    height: 175px;
+  }
+  /* Contact */
+  .social li {
+    display: inline;
+  }
+}
