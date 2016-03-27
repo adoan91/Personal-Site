@@ -39,7 +39,7 @@ section {
 
 
 #wall1 {
-  background: url("http://www.transparenttextures.com/patterns/arabesque.png") repeat;
+  background: url("images/goat.png") repeat; //http://www.transparenttextures.com/patterns/arabesque.png
   background-color: #638cb0;
   background-attachment: fixed;
 }
