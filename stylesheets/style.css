@@ -26,6 +26,16 @@ section {
   padding-bottom: 20px;
 }
 
+/* SPECIAL */
+
+.logo {
+	position: absolute;
+	top: 19%;
+	width: 630px;
+	left: 50%;
+	margin-left: -315px;
+}
+
 
 /* Parallax BG */
 
@@ -239,7 +249,7 @@ footer ul li {
 
 @media (max-width: 768px) {
   /* General */
-  
+
   h1 {
     font-size: 2.5em;
   }
@@ -249,7 +259,7 @@ footer ul li {
   .image {
     height: 400px;
   }
-  
+
   button {
   /* decent spacing to prevent misclicks */
   margin: 10px 6px;
@@ -259,7 +269,7 @@ button a {
   font-size: 16px;
   color: #295781;
 }
-  
+
   /* About */
   .profile {
     height: 175px;
