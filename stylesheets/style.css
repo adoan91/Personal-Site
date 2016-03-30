@@ -60,6 +60,7 @@ section {
 
 	h1 {
 		font-size: 42px;
+
 	}
 
 	.footer {
@@ -102,6 +103,7 @@ section {
 
 h1 {
   font-size: 3.5em;
+  color: #638cb0;
 }
 h1,
 h2 {
