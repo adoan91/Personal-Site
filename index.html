@@ -2,8 +2,17 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Personal-site by adoan91</title>
+    <link rel="icon" type="image/png" href="AD.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anthony Doan">
+    <meta property="og:title" content="Anthony Doan">
+    <meta property="og:site_name" content="Anthony Doan">
+    <meta property="og:url" content="http://adoan91.github.io/Personal-Site/">
+    <meta property="og:description" content="Anthony Doan's portfolio page.">
+    <!--<meta property="og:image" content="">-->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400|Oxygen' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -15,16 +24,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     -->
-    <title>Personal-site by adoan91</title>
+
   </head>
 
   <body>
 
-    <header style='position: relative;' class='header'>
+    <header style="position: relative;" class="header">
 
-      <div class='background' style='position: absolute; top: 0; bottom: 0; left: 0; right: 0;'></div>
-      <div class='logo'>
-        <object type='image/svg+xml' data='images/logo.svg' style='width: 100%; height: 100%;'></object>
+      <div class="background" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+      <div class="logo">
+        <object type="image/svg+xml" data="images/logo.svg" style="width: 100%; height: 100%;"></object>
       </div>
 
     </header>
@@ -268,7 +277,20 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js'></script>
 
-        <script src="js/index.js"></script>
+    <script src="javascripts/index.js"></script>
+
+
+    <script src="javascripts/logo.min.js"></script>
+    <script>
+      // Scroll to Fade header
+      $(window).scroll(function(){
+        $(".header").css("opacity", 1 - ($(window).scrollTop()-300) / 1000);
+      });
+      // Logo Animation JavaScript
+      window.onload = function() {
+        window.logo(document.getElementsByTagName('header')[0]);
+      };
+    </script>
 <!--
     <header>
       <div class="container">
@@ -312,7 +334,6 @@
       </section>
     </div>
 -->
-
 
 
 
