@@ -38,17 +38,13 @@ section {
 
 .header {
 	width: 100%;
-	height: 900px;
+	height: 500px;
 	background-color: #0033cc;
 }
 
 @media (max-width: 700px) {
 	.intro .container {
 		margin-top: 20vh;
-	}
-
-	.header {
-		height: 450px;
 	}
 
 	.logo {
@@ -78,26 +74,6 @@ section {
   background: #2D4571;
   z-index 1;
 }
-
-
-#wall1 {
-  background: url("http://www.transparenttextures.com/patterns/arabesque.png") repeat;
-  background-color: #638cb0;
-  background-attachment: fixed;
-}
-
-#wall2 {
-  background: url("http://www.transparenttextures.com/patterns/black-thread-light.png") repeat;
-  background-color: #610000;
-  background-attachment: fixed;
-}
-
-#wall3 {
-  background: url("http://www.transparenttextures.com/patterns/bo-play.png") repeat;
-  background-color: #110001;
-  background-attachment: fixed;
-}
-
 
 /* Title Fonts */
 
